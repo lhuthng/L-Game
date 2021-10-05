@@ -3,8 +3,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_icons",
-    "path": "sprites/spr_icons/spr_icons.yy",
+    "name": "spr_small_icon",
+    "path": "sprites/spr_small_icon/spr_small_icon.yy",
   },
   "persistent": false,
   "parentObjectId": null,

@@ -5,7 +5,7 @@
 event_inherited();
 
 attack_delay = 45;
-defend_delay = 15;
+defend_delay = 45;
 
 attack = false;
 defend = false;

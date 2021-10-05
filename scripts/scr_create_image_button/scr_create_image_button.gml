@@ -8,7 +8,7 @@ function scr_create_image_button(x, y, index, func){
 	with (button) {
 		image_speed = 0;
 		image_index = index;
-		sprite_index = spr_icons;
+		sprite_index = spr_small_icon;
 		gray = true;
 	}	
 	return button;
