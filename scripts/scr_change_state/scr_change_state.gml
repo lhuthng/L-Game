@@ -33,7 +33,6 @@ function scr_change_state(){
 				if (count > 0) current_player.state = global.ATTACK;
 				else {
 					next_state = global.END;
-					// var snd = global.SOUND_MANAGER.loop;
 					current_player.state = global.IDLE;
 					if (other_player == green_player) {
 						scr_play_sound(global.SFX.WIN);

@@ -87,7 +87,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": -20,
-    "yorigin": 0,
+    "yorigin": -8,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_background_transition","path":"sprites/spr_background_transition/spr_background_transition.yy",},

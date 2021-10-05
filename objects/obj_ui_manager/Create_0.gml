@@ -9,17 +9,15 @@ global.OPPONENTS[2] = scr_create_npc_2;
 
 depth = 1;
 
-origin = {x: x + 2, y: y + 2 };
-
 draw_set_font(fnt_minecraft);
 
 opponents = [];
 
 for (var index = 0; index < 3; index++) {
-	opponents[index] = scr_create_image_button(2 + origin.x + 12 * (index + 1), origin.y, index, global.OPPONENTS[index]);
+	opponents[index] = scr_create_image_button(x + 21 + 12 * (index + 1), y + 2, index, global.OPPONENTS[index]);
 }
 
-turns = [];
-for (var index = 0; index < 2; index++) {
-	turns[index] = scr_create_tick_button(2 + origin.x + 12 * (index + 1), origin.y + 11, index);
-}
+turns = [
+	scr_create_tick_button(x + 97 - 7, y + 3, 0),
+	scr_create_tick_button(x + 2, y + 3, 1),
+];

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ui_window",
+    "path": "sprites/spr_ui_window/spr_ui_window.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -24,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "game",
-    "path": "folders/Objects/game.yy",
+    "name": "ui",
+    "path": "folders/Objects/ui.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_sound_manager",
+  "name": "obj_settings_manager",
   "tags": [],
   "resourceType": "GMObject",
 }

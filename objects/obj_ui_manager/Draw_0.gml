@@ -32,5 +32,4 @@ with (global.MANAGER) {
 		draw_sprite(spr_names, global.UI_MANAGER.index, 97, h);
 	}
 }
-draw_sprite(spr_against, 0, origin.x, origin.y + 6);
 
