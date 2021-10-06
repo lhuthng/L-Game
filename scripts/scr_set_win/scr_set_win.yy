@@ -6,7 +6,7 @@
     "path": "folders/Scripts/behavior/manager.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_disable_start_button",
+  "name": "scr_set_win",
   "tags": [],
   "resourceType": "GMScript",
 }

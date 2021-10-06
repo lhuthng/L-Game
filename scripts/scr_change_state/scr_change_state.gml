@@ -34,11 +34,14 @@ function scr_change_state(){
 				else {
 					next_state = global.END;
 					current_player.state = global.IDLE;
+					scr_set_win(other_player, current_player);
 					if (other_player == green_player) {
+						audio_group_set_gain(grp_music, 0.2, 0);
 						scr_play_sound(global.SFX.WIN);
 						alarm[6] = 200;
 					}
 					else {
+						audio_group_set_gain(grp_music, 0.2, 0);
 						scr_play_sound(global.SFX.LOSE);
 						alarm[6] = 100;
 					}

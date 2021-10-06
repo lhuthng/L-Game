@@ -15,14 +15,14 @@ with (global.MANAGER) {
 	if (started) {
 		if (current_player == green_player) {
 			switch (current_player.state) {
-				case global.ATTACK: draw_sprite(spr_player_attack, 0, 23, 37); break;
-				case global.DEFEND: draw_sprite(spr_player_defend, 0, 23, 37); break;
+				case global.ATTACK: draw_sprite(spr_player_attack, 0, 23, h); break;
+				case global.DEFEND: draw_sprite(spr_player_defend, 0, 23, h); break;
 			}
 		}
 		else {
 			switch (current_player.state) {
-				case global.ATTACK: draw_sprite(spr_attack, current_player.index, 74, 37); break;
-				case global.DEFEND: draw_sprite(spr_defend, current_player.index, 74, 37); break;
+				case global.ATTACK: draw_sprite(spr_attack, current_player.index, 76, h); break;
+				case global.DEFEND: draw_sprite(spr_defend, current_player.index, 76, h); break;
 			}
 		}
 		draw_sprite(spr_icon, red_player.index, 98, h);

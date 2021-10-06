@@ -53,6 +53,7 @@ is_waiting = false;
 
 chainned = false;
 
+scores = [[0, 0], [0, 0], [0, 0]];
 
 preset = {
 	opponent: pointer_null,
