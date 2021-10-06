@@ -53,8 +53,6 @@ is_waiting = false;
 
 chainned = false;
 
-ui_manager = obj_ui_manager;
-ui_manager.manager = self;
 
 preset = {
 	opponent: pointer_null,

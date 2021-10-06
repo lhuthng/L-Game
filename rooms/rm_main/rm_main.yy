@@ -16,7 +16,6 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_ui_manager","path":"objects/obj_ui_manager/obj_ui_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":19.8,"scaleY":3.066667,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":86.0,"resourceVersion":"1.0","name":"inst_51C5E0A6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_settings_manager","path":"objects/obj_settings_manager/obj_settings_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":19.8,"scaleY":2.90126085,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":-2.00000048,"resourceVersion":"1.0","name":"inst_5EB582C1","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":50.0,"y":75.0,"resourceVersion":"1.0","name":"inst_784CABD2","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":25,"gridY":12,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"High","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":7,"gridY":7,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Medium","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -31,7 +30,6 @@
   "instanceCreationOrder": [
     {"name":"inst_5EB582C1","path":"rooms/rm_main/rm_main.yy",},
     {"name":"inst_51C5E0A6","path":"rooms/rm_main/rm_main.yy",},
-    {"name":"inst_784CABD2","path":"rooms/rm_main/rm_main.yy",},
     {"name":"inst_10C97D16","path":"rooms/rm_main/rm_main.yy",},
     {"name":"inst_B227AF1","path":"rooms/rm_main/rm_main.yy",},
   ],
