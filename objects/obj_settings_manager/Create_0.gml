@@ -20,6 +20,8 @@ global.MUSIC = {
 	LOOP: snd_loop
 }
 
+current_music = pointer_null;
+
 music_loaded = false;
 sfx_loaded = false;
 
@@ -28,6 +30,7 @@ audio_group_load(grp_sfx);
 
 sound_on = true;
 music_on = true;
+music_gain = 1;
 
 sound_button = scr_create_sound_setting_button(97, 2);
 music_button = scr_create_music_setting_button(85, 2);

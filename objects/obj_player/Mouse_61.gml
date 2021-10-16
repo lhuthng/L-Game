@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 if (state == global.ATTACK) {
-	scr_rotate_piece(abstract, false);
+	scr_player_scroll(false);
 }

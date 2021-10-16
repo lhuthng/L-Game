@@ -8,6 +8,7 @@ skip = false;
 
 interactable = true;
 
+cache = pointer_null;
 abstract = pointer_null;
 coin = pointer_null;
 
