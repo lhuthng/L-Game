@@ -1,6 +1,6 @@
 {
-  "compression": 0,
-  "volume": 0.5,
+  "compression": 1,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "grp_music",
     "path": "audiogroups/grp_music",
   },
-  "soundFile": "snd_loop.wav",
-  "duration": 31.188776,
+  "soundFile": "snd_loop.mp3",
+  "duration": 72.04571,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

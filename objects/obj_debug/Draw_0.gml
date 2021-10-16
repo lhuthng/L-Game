@@ -1,16 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if variable_instance_exists(obj_manager, "grid") {
-	draw_set_color(c_black);
-	for (var index = 0; index < array_length(obj_manager.grid); index++) {
-		var row = index div 4;
-		var column = index mod 4;
-		draw_text(x + row * obj_manager.size, y + column * obj_manager.size, obj_manager.grid[index]);
-	}
-	draw_text(mouse_x, mouse_y, obj_manager.count);
-}
-
+draw_text(mouse_x, mouse_y, string(global.SETTINGS_MANAGER.extra_gain));
 
 // var xx = 0.0, yy = f_y(xx * a, a), xxx;
 //draw_set_color(c_red);

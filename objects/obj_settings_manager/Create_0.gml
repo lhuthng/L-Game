@@ -17,10 +17,17 @@ global.SFX = {
 }
 
 global.MUSIC = {
-	LOOP: snd_loop
+	LOOP: snd_loop,
+	EXTRA: snd_extra
 }
 
 current_music = pointer_null;
+
+extra_desc = 0.05;
+extra_delay = 3;
+extra_threshold = 0.001;
+extra_gain = extra_threshold;
+extra_first_delay = 60 * 5;
 
 music_loaded = false;
 sfx_loaded = false;

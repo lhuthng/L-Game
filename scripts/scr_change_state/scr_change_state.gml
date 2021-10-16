@@ -50,6 +50,7 @@ function scr_change_state(){
 				break;
 			}
 			case global.DEFEND:{
+				scr_set_extra_gain();
 				with (current_player) {
 					scr_place_piece(piece, abstract.column, abstract.row, abstract.image_index);
 					skip = true;
