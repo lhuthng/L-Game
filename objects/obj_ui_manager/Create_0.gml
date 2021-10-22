@@ -19,6 +19,17 @@ for (var index = 0; index < 3; index++) {
 	opponents[index] = scr_create_icon_button(x + 21 + 12 * (index + 1), y + 2, index, global.OPPONENTS[index]);
 }
 
+cursor_sprite = spr_mouse;
+window_set_cursor(cr_none);
+
+delta_step = 0.4;
+delta_delay = 1;
+green_delta = 0;
+green_target_delta = 0;
+red_delta = 0;
+red_target_delta = 0;
+
+current_index = -1;
 
 start = scr_create_start_button(50, 75);
 

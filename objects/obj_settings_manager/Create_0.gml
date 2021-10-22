@@ -16,18 +16,32 @@ global.SFX = {
 	START: snd_start
 }
 
-global.MUSIC = {
-	LOOP: snd_loop,
-	EXTRA: snd_extra
+global.MUSIC_GAIN = 1;
+global.PREV_MUSIC_GAIN = 1;
+
+enum MUSIC_INDEX {
+	LOOP,
+	EXTRA,
+	
+	length
 }
 
-current_music = pointer_null;
+global.MUSIC = [];
 
-extra_desc = 0.05;
-extra_delay = 3;
-extra_threshold = 0.001;
-extra_gain = extra_threshold;
-extra_first_delay = 60 * 5;
+global.MUSIC[MUSIC_INDEX.LOOP] = {
+	index: snd_loop,
+	gain: 1
+};
+global.MUSIC[MUSIC_INDEX.EXTRA] = {
+	index: snd_extra,
+	gain: 1
+};
+
+
+extra_desc = 0.02;
+extra_delay = room_speed * 0.1;
+extra_threshold = 0.1;
+extra_first_delay = room_speed * 5;
 
 music_loaded = false;
 sfx_loaded = false;

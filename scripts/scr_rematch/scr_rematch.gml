@@ -48,6 +48,8 @@ function scr_rematch(){
 		}
 		
 		scr_change_background();
+		scr_set_green_delta(0);
+		scr_set_red_delta(0);
 		
 		rematched = true;
 		started = false;

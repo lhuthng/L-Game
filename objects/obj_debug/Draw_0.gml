@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_text(mouse_x, mouse_y, string(global.SETTINGS_MANAGER.extra_gain));
+
 
 // var xx = 0.0, yy = f_y(xx * a, a), xxx;
 //draw_set_color(c_red);

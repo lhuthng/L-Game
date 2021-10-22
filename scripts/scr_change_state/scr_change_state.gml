@@ -5,7 +5,7 @@ function scr_change_state(){
 	with (obj_manager) {
 		var next_state = global.IDLE;
 		switch(state) {
-			case global.IDLE:{ scr_change_player(); next_state = global.ATTACK; break; }
+			case global.IDLE: { scr_change_player(); next_state = global.ATTACK; break; }
 			case global.ATTACK: { next_state = global.DEFEND; break; }
 			case global.DEFEND: { next_state = global.WAIT; break; }
 			case global.WAIT: {next_state = global.ATTACK; break; }
@@ -15,7 +15,7 @@ function scr_change_state(){
 				// throw(
 			}
 			case global.ATTACK:{
-				scr_change_player();
+				scr_change_player(true);
 				with (current_player) {
 					abstract = scr_pick_piece(piece);
 					abstract.visible = false;
@@ -50,7 +50,7 @@ function scr_change_state(){
 				break;
 			}
 			case global.DEFEND:{
-				scr_set_extra_gain();
+				scr_set_extra_gain(1);
 				with (current_player) {
 					scr_place_piece(piece, abstract.column, abstract.row, abstract.image_index);
 					skip = true;

@@ -5,11 +5,16 @@ function scr_left_pressed_start_button(button){
 		if (not pressed) {
 			pressed = true;
 			scr_start();
-			//switch (global.MANAGER.red_player.index) {
-			//	case global.NPC_INDEX: scr_play_music(snd_loop_crook); break;
-			//	case global.NPC_2_INDEX: scr_play_music(snd_loop_boss); break;
-			//	default: scr_play_music(global.MUSIC.LOOP);
-			//}
+			
+			with (global.UI_MANAGER) {
+				if (current_index != -1) opponents[current_index].is_loop = false;
+				current_index = index;
+				with (opponents[index]) {
+					is_loop = true;
+					alarm[1] = sub_delay;
+				}
+			}
+			
 			alarm[1] = delay;
 		}
 	}

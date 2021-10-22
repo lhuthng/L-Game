@@ -38,7 +38,7 @@ function scr_start(){
 			started = true;
 			rematched = false;
 			scr_change_state();
-			scr_set_extra_gain();
+			scr_set_extra_gain(1);
 		}
 	}
 }
