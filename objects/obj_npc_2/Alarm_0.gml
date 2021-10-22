@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 if (state == global.ATTACK) {
 	var grid = scr_fill_grid_2(manager.grid, abstract.column, abstract.row, abstract.array, global.EMPTY);
-	min_move = pointer_null;
+	var list = ds_list_create();
+	min_count = infinity;
 	for (var index = 0; index < array_length(manager.available_moves); index++) {
 		var move = manager.available_moves[index];
 		var column = move.index div 4;
@@ -22,19 +22,23 @@ if (state == global.ATTACK) {
 					var grid_4 = scr_fill_grid_2(grid_3, column_2, row_2, [0, 0], global.COIN);
 					grid_4 = scr_fill_grid_2(grid_4, manager.other_player.piece.column, manager.other_player.piece.row, global.PRESET[manager.other_player.piece.image_index], global.EMPTY);
 					var count = array_length(scr_get_possible_moves(grid_4)) - 1;
-					if (min_move == pointer_null || min_move.count > count) {
-						min_move = {
+					if (min_count >= count) {
+						if (min_count > count) ds_list_clear(list);
+						ds_list_add(list, {
 							move: move,
 							move_2: move_2,
 							coin: _coin,
 							count: count
-						}
+						});
+						min_count = count;
 					}
 				}
 			}
 		
 		}
 	}
+	min_move = list[| random_range(0, ds_list_size(list))];
+	ds_list_destroy(list)
 
 	abstract.column = min_move.move.index div 4;
 	abstract.row = min_move.move.index mod 4;

@@ -15,6 +15,7 @@ function scr_left_pressed_start_button(button){
 				}
 			}
 			
+			scr_play_sound(global.SFX.START);
 			alarm[1] = delay;
 		}
 	}
