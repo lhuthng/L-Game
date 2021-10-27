@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "function",
-    "path": "folders/Scripts/function.yy",
+    "name": "creation",
+    "path": "folders/Scripts/creation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_set_piece_logic",
+  "name": "scr_create_temp_cell",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (state == global.ATTACK) {
-	scr_player_scroll(true);
-	last_cell = pointer_null;
+	abstract.visible = false;
+	mouse_pressed = true;
+	exception = true;
 }

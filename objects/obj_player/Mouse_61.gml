@@ -3,4 +3,5 @@
 
 if (state == global.ATTACK) {
 	scr_player_scroll(false);
+	last_cell = pointer_null;
 }

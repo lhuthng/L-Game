@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_create_coin(column, row){
-	var coin = instance_create_layer(x + column * size, y + row * size, "High", obj_coin);
+	var coin = instance_create_layer(x + column * global.CELL_SIZE, y + row * global.CELL_SIZE, "High", obj_coin);
 	coin.manager = self;
 	coin.column = column;
 	coin.row = row;

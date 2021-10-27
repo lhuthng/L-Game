@@ -42,8 +42,8 @@ if (state == global.ATTACK) {
 
 	abstract.column = min_move.move.index div 4;
 	abstract.row = min_move.move.index mod 4;
-	abstract.x = x + abstract.column * manager.size;
-	abstract.y = y + abstract.row * manager.size;
+	abstract.x = x + abstract.column * global.CELL_SIZE;
+	abstract.y = y + abstract.row * global.CELL_SIZE;
 	scr_set_piece_rotation(abstract, min_move.move.image_index);
 	abstract.depth = -abstract.y;
 	scr_change_state();

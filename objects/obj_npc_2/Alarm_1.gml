@@ -7,8 +7,8 @@ if (state == global.DEFEND) {
 
 	abstract.column = min_move.move_2 div 4;
 	abstract.row = min_move.move_2 mod 4;
-	abstract.x = x + abstract.column * manager.size;
-	abstract.y = y + abstract.row * manager.size;
+	abstract.x = x + abstract.column * global.CELL_SIZE;
+	abstract.y = y + abstract.row * global.CELL_SIZE;
 	abstract.depth = -abstract.y;
 	scr_change_state();
 		

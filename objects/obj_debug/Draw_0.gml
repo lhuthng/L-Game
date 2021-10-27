@@ -1,7 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+with (obj_player) {
+	draw_set_color(c_purple);
+	for (var index = 0; index < ds_list_size(spawn_list); index++) {
+		draw_text(mouse_x - 10, mouse_y + 10 * index, string(spawn_list[| index]));
+	}
+}
 
 // var xx = 0.0, yy = f_y(xx * a, a), xxx;
 //draw_set_color(c_red);

@@ -3,8 +3,8 @@
 function scr_place_coin(coin, column, row){
 	coin.column = column;
 	coin.row = row;
-	coin.x = x + coin.column * coin.manager.size;
-	coin.y = y + coin.row * coin.manager.size;
+	coin.x = x + coin.column * global.CELL_SIZE;
+	coin.y = y + coin.row * global.CELL_SIZE;
 	coin.depth = - coin.y;
 	coin.sprite_index = coin.normal;
 	coin.image_index = 0;

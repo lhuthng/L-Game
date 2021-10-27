@@ -4,8 +4,8 @@ function scr_place_piece(piece, column, row, index){
 	piece.layer = layer_get_id("Medium");
 	piece.column = column;
 	piece.row = row;
-	piece.x = x + piece.column * piece.manager.size;
-	piece.y = y + piece.row * piece.manager.size;
+	piece.x = x + piece.column * global.CELL_SIZE;
+	piece.y = y + piece.row * global.CELL_SIZE;
 	piece.depth = - piece.y;
 	piece.sprite_index = piece.normal;
 	piece.image_xscale = 1.4;
