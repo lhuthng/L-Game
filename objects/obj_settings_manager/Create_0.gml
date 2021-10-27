@@ -13,7 +13,8 @@ global.SFX = {
 	WIN: snd_win,
 	LOSE: snd_lose,
 	TICK: snd_tick,
-	START: snd_start
+	START: snd_start,
+	CELL: snd_cell
 }
 
 global.MUSIC_GAIN = 1;

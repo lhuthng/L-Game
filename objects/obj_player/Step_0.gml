@@ -31,7 +31,7 @@ switch (state) {
 								condition &= abs(last_col - col) == 1 and last_row == row or abs(last_row - row) == 1 and last_col == col;
 							}
 							if (condition) {
-								scr_create_temp_cell(col, row);
+								scr_create_temp_cell(id == global.MANAGER.green_player, col, row);
 								ds_list_add(spawn_list, value);
 							}
 						}
