@@ -7,8 +7,9 @@ global.SETTINGS_MANAGER = self;
 
 global.SFX = {
 	PIECE_PLACED: snd_piece,
-	COIN_PLACED: snd_coin,
-	COIN_THROWN: snd_jump,
+	COIN_PICK: snd_coin_collect,
+	COIN_PLACED: snd_coin_drop,
+	COIN_THROWN: snd_coin_jump,
 	SWAP: snd_swap,
 	WIN: snd_win,
 	LOSE: snd_lose,
