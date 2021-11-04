@@ -19,6 +19,7 @@ switch (state) {
 			case PLAYER_MODE.DRAWING: {
 				if (mouse_pressed and (exception or last_cell == pointer_null or last_cell.col != col or last_cell.row != row)) {
 					if (scr_is_between(col, 0, 4) and scr_is_between(row, 0, 4)) {
+						var need_validate = false;
 						var value = col * 4 + row;
 						var index = ds_list_find_index(spawn_list, value);
 						if (index == -1) {
@@ -33,6 +34,8 @@ switch (state) {
 							if (condition) {
 								scr_create_temp_cell(id == global.MANAGER.green_player, col, row);
 								ds_list_add(spawn_list, value);
+								need_validate = true;
+								
 							}
 						}
 						else {
@@ -43,6 +46,14 @@ switch (state) {
 									alarm[0] = 1;
 								}								
 								ds_list_delete(spawn_list, index);
+								need_validate = true;
+							}
+						}
+						if (need_validate) {
+							need_validate = scr_validate_drawing(spawn_list);
+							var size = ds_list_size(spawn_list);
+							for (var index = 0; index < size; index++) {
+								with (global.TEMP_BOARD[spawn_list[| index]]) sprite_index = need_validate != false ? normal : blocked;
 							}
 						}
 					}
