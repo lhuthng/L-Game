@@ -48,6 +48,7 @@
     {"id":{"name":"scr_change_background","path":"scripts/scr_change_background/scr_change_background.yy",},"order":0,},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"order":0,},
     {"id":{"name":"spr_player_name","path":"sprites/spr_player_name/spr_player_name.yy",},"order":1,},
+    {"id":{"name":"scr_compare_position","path":"scripts/scr_compare_position/scr_compare_position.yy",},"order":18,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":10,},
     {"id":{"name":"spr_sound_icon","path":"sprites/spr_sound_icon/spr_sound_icon.yy",},"order":8,},
     {"id":{"name":"scr_alarm_1_start_button","path":"scripts/scr_alarm_1_start_button/scr_alarm_1_start_button.yy",},"order":0,},

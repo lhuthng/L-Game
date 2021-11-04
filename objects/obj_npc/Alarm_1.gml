@@ -4,7 +4,7 @@
 if (state == global.DEFEND) {
 	if (random(1) > 0.5) coin = manager.coin_1;
 	else coin = manager.coin_2;
-	scr_highlight_coin(coin);
+	// scr_highlight_coin(coin);
 	abstract = scr_pick_coin(coin);
 	manager.empty_cells = scr_get_empty_cells(manager.grid);
 	do {

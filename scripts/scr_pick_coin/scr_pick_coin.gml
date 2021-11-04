@@ -2,7 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_pick_coin(coin, extra = false){
 	scr_fill_grid(coin, global.EMPTY);
-	if (extra) scr_play_sound(global.SFX.COIN_PICK);
+	if (extra) {
+		coin.image_yscale = 0.9;
+		scr_play_sound(global.SFX.COIN_PICK);
+	}
 	return {
 		visible: false,
 		x: coin.x,

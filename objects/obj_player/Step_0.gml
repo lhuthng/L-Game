@@ -71,12 +71,17 @@ switch (state) {
 			}
 			if (mouse_check_button_pressed(mb_right)) {
 				scr_unpick_coin(coin);
+				coin.bind = false;
 				break;
 			}
 			scr_set_piece_logic(abstract, x, y, floor((mouse_x - x - 1) / global.CELL_SIZE) + 1, floor((mouse_y - y) / global.CELL_SIZE) + 1, undefined);
-			if (abstract.visible == true and not scr_check_grid(abstract)) abstract.visible = false;
-			else if (abstract.visible == false and scr_check_grid(abstract)) scr_appear(abstract);
-			if (abstract.visible == true and mouse_check_button_pressed(mb_left)) scr_change_state();
+			var compare = scr_compare_position(coin, abstract);
+			if (abstract.visible == true and (not scr_check_grid(abstract) or compare)) abstract.visible = false;
+			else if (abstract.visible == false and scr_check_grid(abstract) and not compare) scr_appear(abstract);
+			if ((abstract.visible == true or compare) and mouse_check_button_pressed(mb_left)) {
+				coin.bind = false;
+				scr_change_state();
+			}
 		}
 		break;
 	}

@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
+bind = false;
 target = pointer_null;
 origin = pointer_null;
 current = 0;

@@ -18,6 +18,7 @@ global.SFX = {
 	CELL: snd_cell
 }
 
+global.MUSIC_COE = 0.4;
 global.MUSIC_GAIN = 1;
 global.PREV_MUSIC_GAIN = 1;
 

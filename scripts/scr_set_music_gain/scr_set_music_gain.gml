@@ -6,7 +6,7 @@ function scr_set_music_gain(value, force = false){
 			global.MUSIC_GAIN = value;
 			for (_ = 0; _ < MUSIC_INDEX.length; _++) {
 				with (global.MUSIC[_]) {
-					audio_sound_gain(index, gain * global.MUSIC_GAIN, 0);
+					audio_sound_gain(index, gain * global.MUSIC_GAIN * global.MUSIC_COE, 0);
 				}
 			}
 		}
