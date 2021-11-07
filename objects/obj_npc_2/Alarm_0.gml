@@ -37,7 +37,8 @@ if (state == global.ATTACK) {
 		
 		}
 	}
-	min_move = list[| random_range(0, ds_list_size(list))];
+	var random_position = irandom(ds_list_size(list) - 1);
+	min_move = list[| random_position];
 	ds_list_destroy(list)
 
 	abstract.column = min_move.move.index div 4;

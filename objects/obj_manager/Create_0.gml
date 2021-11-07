@@ -1,4 +1,4 @@
- /// @description Insert description here
+// @description Insert description here
 // You can write your code in this editor
 
 global.IDLE = 0;
@@ -61,9 +61,9 @@ trail_particle = part_type_create();
 
 delay = 10;
 
-part_type_life(trail_particle, 15, 15);
-part_type_color1(trail_particle, c_white);
-part_type_alpha1(trail_particle, 0.05);
+part_type_life(trail_particle, 25, 25);
+part_type_color2(trail_particle, c_yellow, c_white);
+part_type_alpha2(trail_particle, 0.01, 0);
 
 pieces_created = false;
 players_created = false;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (abstract != pointer_null) depth = -abstract.y;
+if (abstract != pointer_null) depth = -abstract.y + 1;
 switch (state) {
 	case global.ATTACK: {
 		var col = floor((mouse_x - x - 1) / global.CELL_SIZE) + 1;
