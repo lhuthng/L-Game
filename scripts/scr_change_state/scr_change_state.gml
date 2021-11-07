@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function scr_change_state(){
-	with (obj_manager) {
+	with (global.MANAGER) {
 		var next_state = global.IDLE;
 		switch(state) {
 			case global.IDLE: { scr_change_player(); next_state = global.ATTACK; break; }
@@ -16,10 +16,6 @@ function scr_change_state(){
 			}
 			case global.ATTACK:{
 				scr_change_player(true);
-				with (current_player) {
-					abstract = scr_pick_piece(piece);
-					abstract.visible = false;
-				}
 				with (other_player) {
 					if (abstract != pointer_null) {
 						scr_place_coin(coin, abstract.column, abstract.row);
@@ -27,10 +23,16 @@ function scr_change_state(){
 					}
 					state = global.IDLE;					
 				}
-				available_moves = scr_get_possible_moves(grid);				
+				available_moves = scr_get_possible_moves_2(grid, current_player.piece);				
 				count = array_length(available_moves) - 1;
 				
-				if (count > 0) current_player.state = global.ATTACK;
+				if (count > 0) {
+					with (current_player) {
+						abstract = scr_pick_piece(piece);
+						abstract.visible = false;
+					}
+					current_player.state = global.ATTACK;
+				}
 				else {
 					next_state = global.END;
 					current_player.state = global.IDLE;

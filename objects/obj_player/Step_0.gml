@@ -6,15 +6,14 @@ switch (state) {
 	case global.ATTACK: {
 		var col = floor((mouse_x - x - 1) / global.CELL_SIZE) + 1;
 		var row = floor((mouse_y - y) / global.CELL_SIZE) + 1;
-		switch (mode) {
+		switch (is_red ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) {
 			case PLAYER_MODE.PLACING: {
 				if (last_cell == pointer_null or last_cell.col != col or last_cell.row != row) {
 					scr_set_piece_logic(abstract, x, y, col, row, undefined);
 					if (abstract.visible == true and (not scr_check_grid(abstract) or abstract.image_index == piece.image_index and abstract.row == piece.row and abstract.column == piece.column)) abstract.visible = false;
 					else if (abstract.visible == false) if scr_check_grid(abstract) and (abstract.image_index != piece.image_index or abstract.row != piece.row or abstract.column != piece.column) scr_appear(abstract);
-					if (abstract.visible == true and mouse_check_button_pressed(mb_left)) scr_change_state();
-					
 				}
+				break;
 			}
 			case PLAYER_MODE.DRAWING: {
 				if (mouse_pressed and (exception or last_cell == pointer_null or last_cell.col != col or last_cell.row != row)) {
@@ -58,6 +57,7 @@ switch (state) {
 						}
 					}
 				}
+				break;
 			}
 		}
 		last_cell = {col: col, row: row};

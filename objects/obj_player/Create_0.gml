@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 enum PLAYER_MODE {
-	DRAWING,
-	PLACING
+	DRAWING = 0,
+	PLACING = 1
 };
 
 mode = PLAYER_MODE.DRAWING;
@@ -29,4 +29,3 @@ delay = 1;
 // spawn_list = ds_list_create();
 last_cell = pointer_null;
 spawn_list = ds_list_create();
-despawn_list = ds_list_create();

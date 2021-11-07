@@ -1,13 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth = 1;
-
 global.UI_MANAGER = self;
-
-global.OPPONENTS[0] = scr_create_player;
-global.OPPONENTS[1] = scr_create_npc;
-global.OPPONENTS[2] = scr_create_npc_2;
 
 depth = 1;
 
@@ -36,4 +30,9 @@ start = scr_create_start_button(50, 75);
 turns = [
 	scr_create_tick_button(x + 97 - 7, y + 3, 0),
 	scr_create_tick_button(x + 2, y + 3, 1),
+];
+
+styles = [
+	scr_create_style_button(x + 10, y + 2, false),
+	scr_create_style_button(x + 99 - 10, y + 2, true)
 ];

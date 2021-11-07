@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_start(){
-	with (obj_manager) {
+	with (global.MANAGER) {
 		if (is_waiting and not (is_waiting and chainned)) break;
 		if (not rematched) {
 			chainned = true;
