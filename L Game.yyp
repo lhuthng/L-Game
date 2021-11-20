@@ -17,6 +17,7 @@
     {"id":{"name":"scr_get_empty_cells","path":"scripts/scr_get_empty_cells/scr_get_empty_cells.yy",},"order":6,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":4,},
     {"id":{"name":"spr_surrender","path":"sprites/spr_surrender/spr_surrender.yy",},"order":4,},
+    {"id":{"name":"spr_confetti","path":"sprites/spr_confetti/spr_confetti.yy",},"order":15,},
     {"id":{"name":"scr_place_coin","path":"scripts/scr_place_coin/scr_place_coin.yy",},"order":8,},
     {"id":{"name":"spr_player_icon","path":"sprites/spr_player_icon/spr_player_icon.yy",},"order":0,},
     {"id":{"name":"scr_play_music","path":"scripts/scr_play_music/scr_play_music.yy",},"order":1,},

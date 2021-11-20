@@ -6,5 +6,5 @@ function scr_unpick_coin(coin){
 		abstract = pointer_null;
 	}
 	scr_fill_grid(coin, global.COIN);
-	scr_unhighlight_coin(coin);
+	scr_unhighlight_coin(coin, true);
 }

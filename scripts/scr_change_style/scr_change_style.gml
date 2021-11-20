@@ -4,10 +4,12 @@ function scr_change_style(is_red, value){
 	with (global.MANAGER) {
 		if (not is_red) {
 			global.GREEN_PLAYER_MODE = value;
+			scr_play_sound(global.SFX.TICK);
 			return true;
 		}
 		else if (players_created and red_player.index == global.PLAYER_INDEX) {
 			global.RED_PLAYER_MODE = value;
+			scr_play_sound(global.SFX.TICK);
 			return true;
 		}
 		return false;
