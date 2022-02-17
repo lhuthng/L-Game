@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/grp_music",
   },
   "soundFile": "snd_loop.wav",
-  "duration": 82.28573,
+  "duration": 128.000015,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

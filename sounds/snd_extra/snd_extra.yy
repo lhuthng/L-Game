@@ -1,6 +1,7 @@
 {
+  "conversionMode": 0,
   "compression": 0,
-  "volume": 0.05,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +12,7 @@
     "path": "audiogroups/grp_music",
   },
   "soundFile": "snd_extra.wav",
-  "duration": 82.28573,
+  "duration": 128.000015,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
