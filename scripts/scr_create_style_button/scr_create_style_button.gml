@@ -1,13 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_create_style_button(x, y, is_red = true){
+function scr_create_style_button(x, y, is_green = true){
 	var button = instance_create_layer(x, y, layer, obj_image_button);
 	button.image_speed = 0;
-	button.image_index = (is_red ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) * (is_red + 1);
+	button.image_index = (is_green ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) * (is_green + 1);
 	button.sprite_index = spr_style;
 	
-	button.is_red = is_red;
-	if (is_red) {
+	button.is_green = is_green;
+	if (is_green) {
 		button.image_xscale = -1;
 	}
 	with (button) {

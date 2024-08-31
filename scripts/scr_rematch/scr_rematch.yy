@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "manager",
-    "path": "folders/Scripts/behavior/manager.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_rematch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_rematch",
+  "parent":{
+    "name":"manager",
+    "path":"folders/Scripts/behavior/manager.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_rematch",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

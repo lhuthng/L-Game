@@ -6,7 +6,7 @@ switch (state) {
 	case global.ATTACK: {
 		var col = floor((mouse_x - x - 1) / global.CELL_SIZE) + 1;
 		var row = floor((mouse_y - y) / global.CELL_SIZE) + 1;
-		switch (is_red ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) {
+		switch (is_green ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) {
 			case PLAYER_MODE.PLACING: {
 				if (last_cell == pointer_null or last_cell.col != col or last_cell.row != row) {
 					scr_set_piece_logic(abstract, x, y, col, row, undefined);

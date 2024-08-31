@@ -9,8 +9,8 @@ draw_set_font(fnt_minecraft);
 
 opponents = [];
 
-for (var index = 0; index < 3; index++) {
-	opponents[index] = scr_create_icon_button(x + 21 + 12 * (index + 1), y + 2, index, global.OPPONENTS[index]);
+for (var index = 0; index < 4; index++) {
+	opponents[index] = scr_create_icon_button(x + 15 + 12 * (index + 1), y + 2, index, global.OPPONENTS[index]);
 }
 
 cursor_sprite = spr_mouse;

@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "function",
-    "path": "folders/Scripts/function.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_check_coin",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_check_coin",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_check_coin",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

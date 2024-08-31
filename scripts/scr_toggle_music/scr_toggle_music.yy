@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "sound",
-    "path": "folders/Scripts/behavior/sound.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_toggle_music",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_toggle_music",
+  "parent":{
+    "name":"sound",
+    "path":"folders/Scripts/behavior/sound.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_toggle_music",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

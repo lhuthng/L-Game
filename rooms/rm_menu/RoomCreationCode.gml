@@ -20,7 +20,14 @@ enum MUSIC_INDEX {
 	EXTRA,
 	
 	length
-}
+};
+
+enum PLAYER_TYPE {
+	PLAYER,
+	BOT_1,
+	BOT_2,
+	NETWORK
+};
 
 global.MUSIC = [];
 
@@ -33,9 +40,13 @@ global.MUSIC[MUSIC_INDEX.EXTRA] = {
 	gain: 1
 };
 
-global.OPPONENTS[0] = scr_create_red_player;
-global.OPPONENTS[1] = scr_create_npc;
-global.OPPONENTS[2] = scr_create_npc_2;
+global.OPPONENTS = [
+	PLAYER_TYPE.PLAYER, 
+	PLAYER_TYPE.BOT_1,
+	PLAYER_TYPE.BOT_2,
+	PLAYER_TYPE.NETWORK
+];
+
 
 global.IDLE = 0;
 global.ATTACK = 1;
@@ -50,6 +61,7 @@ global.COIN = 2;
 global.PLAYER_INDEX = 0;
 global.NPC_INDEX = 1;
 global.NPC_2_INDEX = 2;
+global.NETWORK_INDEX = 3;
 
 global.RED_PLAYER_MODE = PLAYER_MODE.DRAWING;
 global.GREEN_PLAYER_MODE = PLAYER_MODE.DRAWING;
@@ -86,3 +98,11 @@ global.CELL_SIZE = 7;
 
 global.TEMP_BOARD = [pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null, pointer_null];
 
+global.CONNECTING_BOX = pointer_null;
+global.HOSTING_BOX = pointer_null;
+
+global.ws = pointer_null;
+global.CLIENT_PLAYER = pointer_null;
+global.HOST_PLAYER = pointer_null;
+
+global.IS_CLIENT = false;

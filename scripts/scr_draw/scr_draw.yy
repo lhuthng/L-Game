@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "draw",
-    "path": "folders/Scripts/behavior/scripted function/draw.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw",
+  "parent":{
+    "name":"draw",
+    "path":"folders/Scripts/behavior/scripted function/draw.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_draw",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

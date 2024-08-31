@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_request_token",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_request_token",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

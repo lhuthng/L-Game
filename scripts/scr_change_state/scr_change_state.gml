@@ -18,6 +18,9 @@ function scr_change_state(){
 				scr_change_player(true);
 				with (other_player) {
 					if (abstract != pointer_null) {
+						if (response != pointer_null) {
+							scr_send_defend(response, coin, abstract);
+						}
 						scr_place_coin(coin, abstract.column, abstract.row);
 						abstract = pointer_null;
 					}

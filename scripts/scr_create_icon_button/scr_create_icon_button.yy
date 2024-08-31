@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "creation",
-    "path": "folders/Scripts/creation.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_create_icon_button",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_icon_button",
+  "parent":{
+    "name":"creation",
+    "path":"folders/Scripts/creation.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_create_icon_button",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

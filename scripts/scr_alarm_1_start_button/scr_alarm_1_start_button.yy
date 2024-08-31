@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "alarm 1",
-    "path": "folders/Scripts/behavior/scripted function/alarm 1.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_alarm_1_start_button",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_alarm_1_start_button",
+  "parent":{
+    "name":"alarm 1",
+    "path":"folders/Scripts/behavior/scripted function/alarm 1.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_alarm_1_start_button",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

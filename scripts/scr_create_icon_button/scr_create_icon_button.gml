@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_create_icon_button(x, y, index, func){
+function scr_create_icon_button(x, y, index, opponent){
 	var button = instance_create_layer(x, y, layer, obj_image_button);
-	button.func = func;
+	button.opponent = opponent;
 	button.index = index;
 	with (button) {
 		image_speed = 0;
