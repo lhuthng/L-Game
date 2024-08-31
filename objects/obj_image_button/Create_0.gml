@@ -16,3 +16,5 @@ f_alarm_1 = scr_null;
 f_draw = scr_null;
 f_left_pressed = scr_null;
 f_step = scr_null;
+
+enabled = true;

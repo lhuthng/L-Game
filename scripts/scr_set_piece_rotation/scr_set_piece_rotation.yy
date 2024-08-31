@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "function",
-    "path": "folders/Scripts/function.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_set_piece_rotation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_piece_rotation",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_set_piece_rotation",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

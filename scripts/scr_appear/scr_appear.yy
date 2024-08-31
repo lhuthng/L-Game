@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "piece & coin",
-    "path": "folders/Scripts/behavior/piece & coin.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_appear",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_appear",
+  "parent":{
+    "name":"piece & coin",
+    "path":"folders/Scripts/behavior/piece & coin.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_appear",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

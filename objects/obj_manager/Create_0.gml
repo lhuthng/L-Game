@@ -33,7 +33,7 @@ scores = [[0, 0], [0, 0], [0, 0]];
 
 preset = {
 	opponent: pointer_null,
-	is_player_first: true,
+	is_green: true,
 }
 scr_set_preset(1, true);
 

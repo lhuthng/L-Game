@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_send_attack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_send_attack",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "manager",
-    "path": "folders/Scripts/behavior/manager.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_change_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_change_state",
+  "parent":{
+    "name":"manager",
+    "path":"folders/Scripts/behavior/manager.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_change_state",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

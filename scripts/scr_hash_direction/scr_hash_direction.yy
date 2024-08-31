@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "function",
-    "path": "folders/Scripts/function.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_hash_direction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_hash_direction",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_hash_direction",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "creation",
-    "path": "folders/Scripts/creation.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_create_temp_cell",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_temp_cell",
+  "parent":{
+    "name":"creation",
+    "path":"folders/Scripts/creation.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_create_temp_cell",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

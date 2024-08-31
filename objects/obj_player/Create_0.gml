@@ -29,3 +29,5 @@ delay = 1;
 // spawn_list = ds_list_create();
 last_cell = pointer_null;
 spawn_list = ds_list_create();
+
+response = pointer_null;

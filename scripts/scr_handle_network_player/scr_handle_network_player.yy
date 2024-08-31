@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_handle_network_player",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_handle_network_player",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

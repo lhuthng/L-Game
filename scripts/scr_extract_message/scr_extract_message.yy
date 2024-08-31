@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_extract_message",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_extract_message",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

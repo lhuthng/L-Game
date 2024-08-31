@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_draw_style_button(button){
 	with(button) {
-		var check = instance_exists(obj_manager) and (not is_red or is_red and global.MANAGER.players_created and global.MANAGER.red_player.index == global.PLAYER_INDEX);
+		var check = instance_exists(obj_manager) and (not is_green or is_green and global.MANAGER.players_created and global.MANAGER.red_player.index == global.PLAYER_INDEX);
 		if (check) {
 			draw_self();
 		}
