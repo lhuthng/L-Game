@@ -3,5 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-
+interactable = false;
 sid = pointer_null;

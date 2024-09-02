@@ -3,7 +3,7 @@
 function scr_create_style_button(x, y, is_green = true){
 	var button = instance_create_layer(x, y, layer, obj_image_button);
 	button.image_speed = 0;
-	button.image_index = (is_green ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) * (is_green + 1);
+	button.image_index = (is_green ? global.GREEN_PLAYER_MODE : global.RED_PLAYER_MODE) * (is_green + 1);
 	button.sprite_index = spr_style;
 	
 	button.is_green = is_green;

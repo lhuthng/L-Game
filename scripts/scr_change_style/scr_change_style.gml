@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_change_style(is_green, value){
 	with (global.MANAGER) {
-		if (not is_green) {
+		if (is_green) {
 			global.GREEN_PLAYER_MODE = value;
 			scr_play_sound(global.SFX.TICK);
 			return true;
