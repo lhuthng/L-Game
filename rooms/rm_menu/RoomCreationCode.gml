@@ -63,9 +63,6 @@ global.NPC_INDEX = 1;
 global.NPC_2_INDEX = 2;
 global.NETWORK_INDEX = 3;
 
-global.RED_PLAYER_MODE = PLAYER_MODE.DRAWING;
-global.GREEN_PLAYER_MODE = PLAYER_MODE.DRAWING;
-
 global.PRESET[0] = [0, 0, 1, 0, 0, -1, 0, -2];
 global.PRESET[1] = [0, 0, 0, 1, 1, 0, 2, 0];
 global.PRESET[2] = [0, 0, -1, 0, 0, 1, 0, 2];

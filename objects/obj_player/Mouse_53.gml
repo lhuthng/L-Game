@@ -3,7 +3,7 @@
 
 if (state == global.ATTACK) {
 	mouse_pressed = true;
-	switch (is_green ? global.GREEN_PLAYER_MODE : global.RED_PLAYER_MODE) {
+	switch (mode) {
 			case PLAYER_MODE.PLACING: {
 				if (abstract.visible == true) {
 					if (response != pointer_null) {

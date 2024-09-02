@@ -3,15 +3,17 @@
 function scr_left_pressed_style_button(button){
 	with (button) {
 		if (is_green) {
-			var new_style = global.GREEN_PLAYER_MODE == PLAYER_MODE.DRAWING ? PLAYER_MODE.PLACING : PLAYER_MODE.DRAWING;
+			var new_style = (global.MANAGER.green_player.mode + 1) % 2;
 			if(scr_change_style(is_green, new_style)) {
-				image_index = new_style * 2;
+				mode = new_style;
+				image_index = new_style;
 			}
 		}
 		else {
-			var new_style = global.RED_PLAYER_MODE == PLAYER_MODE.DRAWING ? PLAYER_MODE.PLACING : PLAYER_MODE.DRAWING;
+			var new_style = (global.MANAGER.red_player.mode + 1) % 2;
 			if(scr_change_style(is_green, new_style)) {
-				image_index = new_style;
+				mode = new_style;
+				image_index = new_style * 2;
 			}
 		}
 	}
