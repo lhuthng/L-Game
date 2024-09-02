@@ -33,6 +33,6 @@ turns = [
 ];
 
 styles = [
-	scr_create_style_button(x + 10, y + 2, false),
-	scr_create_style_button(x + 99 - 10, y + 2, true)
+	scr_create_style_button(x + 10, y + 2, true),
+	scr_create_style_button(x + 99 - 10, y + 2, false)
 ];

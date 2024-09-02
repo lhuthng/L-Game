@@ -10,10 +10,14 @@ function scr_create_match(green_type, red_type){
 		players_created = true;
 	}
 	state = global.IDLE;
+	global.UI_MANAGER.styles[0].visible = false;
+	global.UI_MANAGER.styles[1].visible = false;
 	
 	switch (green_type) {
 		case PLAYER_TYPE.PLAYER: {
 			green_player = scr_create_player(green_piece);
+			green_player.mode = global.UI_MANAGER.styles[0].mode;
+			global.UI_MANAGER.styles[0].visible = true;
 			break;
 		}
 		case PLAYER_TYPE.NETWORK: {
@@ -25,6 +29,8 @@ function scr_create_match(green_type, red_type){
 	switch (red_type) {
 		case PLAYER_TYPE.PLAYER: {
 			red_player = scr_create_player(red_piece);
+			red_player.mode = global.UI_MANAGER.styles[1].mode;
+			global.UI_MANAGER.styles[1].visible = true;
 			break;
 		}
 		case PLAYER_TYPE.BOT_1: {

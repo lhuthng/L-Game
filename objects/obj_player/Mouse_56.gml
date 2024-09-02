@@ -3,7 +3,7 @@
 
 mouse_pressed = false;
 if (state == global.ATTACK) {
-	switch (is_green ? global.RED_PLAYER_MODE : global.GREEN_PLAYER_MODE) {
+	switch (mode) {
 			case PLAYER_MODE.PLACING: {
 				break;
 			}
