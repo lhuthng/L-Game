@@ -23,6 +23,28 @@ non_blocking_count = 0;
 
 token = "";
 
-enabled = true;
-
 connected = false;
+
+actual = {
+	y: y,
+	a: image_alpha
+};
+
+shifting = {
+	y: 10,
+	a: 0.5,
+};
+
+tick = 10;
+delay = 1;
+current_tick = 0;
+delta = {
+	y: shifting.y / (tick / delay),
+	a: shifting.a / (tick / delay)
+};
+
+enabled = false;
+alarm_set(0, delay);
+
+y += shifting.y;
+image_alpha -= shifting.a;
