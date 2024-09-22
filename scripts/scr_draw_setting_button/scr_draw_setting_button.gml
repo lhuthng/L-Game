@@ -6,7 +6,7 @@ function scr_draw_setting_button(button){
 
 		if (position_meeting(mouse_x, mouse_y, id)) {
 			shader_set(shd_flash);
-			draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 0.3);
+			draw_sprite_ext(sprite_index, img_idx, x, y, image_xscale, image_yscale, 0, c_white, 0.3);
 			shader_reset();
 		}
 	}

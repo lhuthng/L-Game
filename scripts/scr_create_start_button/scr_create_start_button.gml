@@ -5,6 +5,7 @@ function scr_create_start_button(x, y){
 	with (button) {
 		sprite_index = spr_go;
 		image_speed = 0;
+		img_idx = 0;
 		image_index = 0;
 		global.START_BUTTON = self;
 

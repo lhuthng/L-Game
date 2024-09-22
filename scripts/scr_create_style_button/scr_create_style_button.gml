@@ -6,7 +6,8 @@ function scr_create_style_button(x, y, is_green = true){
 	with (button) {
 		mode = PLAYER_MODE.DRAWING;
 		image_speed = 0;
-		image_index = 0;
+		img_idx = 0;
+		image_index = img_idx;
 		sprite_index = spr_style;
 		visible = false;
 		if (not is_green) {

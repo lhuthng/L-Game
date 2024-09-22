@@ -5,7 +5,8 @@ function scr_create_music_setting_button(x, y){
 	with (button) {
 		sprite_index = spr_music_icon;
 		image_speed = 0;
-		image_index = global.SETTINGS_MANAGER.music_on;
+		img_idx = global.SETTINGS_MANAGER.music_on;
+		image_index = img_idx;
 			
 		trigger = scr_toggle_music;
 			

@@ -4,7 +4,8 @@ function scr_clone_piece_logic(piece){
 	var new_piece = instance_create_layer(piece.x, piece.y, "High", obj_piece);
 	new_piece.image_speed = 0;
 	new_piece.array = piece.array;
-	new_piece.image_index = piece.image_index;
+	new_piece.img_idx = piece.img_idx;
+	new_piece.image_index = piece.img_idx;
 	new_piece.row = piece.row;
 	new_piece.column = piece.column;
 	return new_piece;

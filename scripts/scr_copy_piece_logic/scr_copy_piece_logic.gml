@@ -7,6 +7,7 @@ function scr_copy_piece_logic(scr, des){
 	des.y = scr.y;
 	des.depth = scr.depth;
 	des.array = scr.array;
-	des.image_index = scr.image_index;
+	dex.img_idx = scr.img_idx;
+	des.image_index = scr.img_idx;
 	des.sprite_index = scr.sprite_index;
 }

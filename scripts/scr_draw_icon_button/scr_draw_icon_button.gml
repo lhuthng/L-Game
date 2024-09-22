@@ -14,7 +14,7 @@ function scr_draw_icon_button(button){
 		else {
 			if (flash_value > 0){
 				shader_set(shd_flash);
-				draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, flash_value);
+				draw_sprite_ext(sprite_index, img_idx, x, y, image_xscale, image_yscale, 0, c_white, flash_value);
 				shader_reset();
 			}
 		}

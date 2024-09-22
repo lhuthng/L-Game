@@ -6,6 +6,7 @@ function scr_create_icon_button(x, y, index, opponent){
 	button.index = index;
 	with (button) {
 		image_speed = 0;
+		img_idx = index;
 		image_index = index;
 		sprite_index = spr_small_icon;
 

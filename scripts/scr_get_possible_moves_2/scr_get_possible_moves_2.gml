@@ -20,6 +20,7 @@ function scr_get_possible_moves_2(grid, piece){
 			if (check) {
 				moves[count++] = {
 					index: index,
+					img_idx: shape_index,
 					image_index: shape_index
 				};
 			}

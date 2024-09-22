@@ -5,7 +5,8 @@ function scr_create_sound_setting_button(x, y){
 	with (button) {
 		sprite_index = spr_sound_icon;
 		image_speed = 0;
-		image_index = global.SETTINGS_MANAGER.sound_on;
+		img_idx = global.SETTINGS_MANAGER.sound_on;
+		image_index = img_idx;
 			
 		trigger = scr_toggle_sound;
 			
