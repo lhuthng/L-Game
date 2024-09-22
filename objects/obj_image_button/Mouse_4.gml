@@ -9,6 +9,6 @@
 //flash_value = 1;
 //alarm[0] = delay;
 
-if (not enabled) exit;
+if (not enabled or not visible) exit;
 
 f_left_pressed(self);

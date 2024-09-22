@@ -11,10 +11,6 @@ if (sid == global.ws) {
     switch (stype) {
         case network_type_connect:
             break;
-        case network_type_disconnect:
-            token = "";
-			status_index = 0;
-            break;
 
         case network_type_data:
             var r_buffer = async_load[? "buffer"];
@@ -59,8 +55,8 @@ if (sid == global.ws) {
 				network_send_raw(sid, w_buffer, buffer_tell(w_buffer), network_send_text);
 				buffer_delete(w_buffer);
 				connected = true;
-				global.CONNECTING_BOX.enabled = false;
-				global.CONNECTING_BOX.status_index = 3;
+				client.enabled = false;
+				client.status_index = 3;
 			}
 			else {
 				show_debug_message("Failed");

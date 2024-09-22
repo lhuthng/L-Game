@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_rematch(){
+function scr_rematch(skip = false){
 	with (global.MANAGER) {
 		if (is_waiting) break;
 		
@@ -52,6 +52,6 @@ function scr_rematch(){
 		scr_set_red_delta(0);
 		
 		rematched = true;
-		started = false;
+		started = skip;
 	}
 }

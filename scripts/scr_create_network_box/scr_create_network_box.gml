@@ -3,4 +3,6 @@
 function scr_create_network_box(){
 	global.HOSTING_BOX = instance_create_layer(2, 65, "High", obj_hosting_box);
 	global.CONNECTING_BOX = instance_create_layer(97, 65, "High", obj_connecting_box);
+	global.HOSTING_BOX.client = global.CONNECTING_BOX;
+	 global.CONNECTING_BOX.host = global.HOSTING_BOX;
 }
