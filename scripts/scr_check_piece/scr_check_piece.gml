@@ -4,6 +4,6 @@ function scr_check_piece(piece, column, row, image_index, sprite_index_skip = fa
 	return 
 		piece.column == column 
 		and piece.row == row 
-		and piece.image_index == image_index
+		and piece.img_idx == image_index
 		and (sprite_index_skip or piece.sprite_index == piece.normal);
 }

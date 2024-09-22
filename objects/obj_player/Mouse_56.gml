@@ -9,7 +9,7 @@ if (state == global.ATTACK) {
 			}
 			case PLAYER_MODE.DRAWING: {
 				if (scr_set_piece_logic_2(spawn_list, x, y, abstract)) {
-					if (abstract.image_index != piece.image_index or abstract.row != piece.row or abstract.column != piece.column) {
+					if (abstract.img_idx != piece.img_idx or abstract.row != piece.row or abstract.column != piece.column) {
 						if (response != pointer_null) {
 							scr_send_attack(response, abstract);
 						}

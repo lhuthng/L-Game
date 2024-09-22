@@ -8,8 +8,8 @@ if (state == global.ATTACK) {
 		var move = manager.available_moves[index];
 		var column = move.index div 4;
 		var row = move.index mod 4;
-		if (column != abstract.column or row != abstract.row or move.image_index != abstract.image_index) {
-			var grid_2 = scr_fill_grid_2(grid, column, row, global.PRESET[move.image_index], global.BLOCK);
+		if (column != abstract.column or row != abstract.row or move.img_idx != abstract.imagimg_idxe_index) {
+			var grid_2 = scr_fill_grid_2(grid, column, row, global.PRESET[move.img_idx], global.BLOCK);
 			var coins = [manager.coin_1, manager.coin_2];
 			for (var index_3 = 0; index_3 < 2; index_3++) {
 				var _coin = coins[index_3];
@@ -20,7 +20,7 @@ if (state == global.ATTACK) {
 					var column_2 = move_2 div 4;
 					var row_2 = move_2 mod 4;
 					var grid_4 = scr_fill_grid_2(grid_3, column_2, row_2, [0, 0], global.COIN);
-					grid_4 = scr_fill_grid_2(grid_4, manager.other_player.piece.column, manager.other_player.piece.row, global.PRESET[manager.other_player.piece.image_index], global.EMPTY);
+					grid_4 = scr_fill_grid_2(grid_4, manager.other_player.piece.column, manager.other_player.piece.row, global.PRESET[manager.other_player.piece.img_idx], global.EMPTY);
 					var count = array_length(scr_get_possible_moves(grid_4)) - 1;
 					if (min_count >= count) {
 						if (min_count > count) ds_list_clear(list);
@@ -45,7 +45,7 @@ if (state == global.ATTACK) {
 	abstract.row = min_move.move.index mod 4;
 	abstract.x = x + abstract.column * global.CELL_SIZE;
 	abstract.y = y + abstract.row * global.CELL_SIZE;
-	scr_set_piece_rotation(abstract, min_move.move.image_index);
+	scr_set_piece_rotation(abstract, min_move.move.img_idx);
 	abstract.depth = -abstract.y;
 	scr_change_state();
 

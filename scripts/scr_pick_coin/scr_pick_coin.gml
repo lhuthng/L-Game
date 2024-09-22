@@ -13,7 +13,8 @@ function scr_pick_coin(coin, extra = false){
 		column: coin.column,
 		row: coin.row,
 		sprite_index: spr_alternative_coin,
-		image_index: coin.image_index,
+		image_index: coin.img_idx,
+		img_idx: coin.img_idx,
 		array: coin.array
 	}
 }

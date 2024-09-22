@@ -3,6 +3,7 @@
 function scr_create_tick_button(x, y, index){
 	var button = instance_create_layer(x, y, layer, obj_image_button);
 	button.image_speed = 0;
+	button.img_idx = index;
 	button.image_index = index;
 	button.sprite_index = spr_colors;
 	button.turn = index;

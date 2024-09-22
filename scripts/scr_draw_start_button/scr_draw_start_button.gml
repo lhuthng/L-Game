@@ -4,7 +4,7 @@ function scr_draw_start_button(button){
 	with (button) {
 		if (visible) {
 			var dx = shake ? random_range(-1, 1) : 0;
-			draw_sprite_ext(sprite_index, image_index, x + dx, y, image_xscale, image_yscale, 0, c_white, opacity);
+			draw_sprite_ext(sprite_index, img_idx, x + dx, y, image_xscale, image_yscale, 0, c_white, opacity);
 		}
 	}
 }

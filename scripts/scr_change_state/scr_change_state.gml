@@ -57,7 +57,7 @@ function scr_change_state(){
 			case global.DEFEND:{
 				scr_set_extra_gain(1);
 				with (current_player) {
-					scr_place_piece(piece, abstract.column, abstract.row, abstract.image_index);
+					scr_place_piece(piece, abstract.column, abstract.row, abstract.img_idx);
 					skip = true;
 					abstract = pointer_null;
 					state = global.DEFEND;

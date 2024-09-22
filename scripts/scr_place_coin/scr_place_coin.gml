@@ -8,6 +8,7 @@ function scr_place_coin(coin, column, row){
 	coin.depth = - coin.y;
 	coin.sprite_index = coin.normal;
 	coin.image_index = 0;
+	coin.img_idx = 0;
 	coin.image_yscale = 1.3;
 	coin.visible = true;
 	scr_fill_grid(coin, global.COIN);

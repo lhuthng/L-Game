@@ -11,7 +11,7 @@ switch (state) {
 				if (last_cell == pointer_null or last_cell.col != col or last_cell.row != row) {
 					scr_set_piece_logic(abstract, x, y, col, row, undefined);
 					if (abstract.visible == true){
-						if (not scr_check_grid(abstract) or scr_check_piece(abstract, piece.column, piece.row, piece.image_index, true)) {
+						if (not scr_check_grid(abstract) or scr_check_piece(abstract, piece.column, piece.row, piece.img_idx, true)) {
 							if (scr_player_scroll(false)) {
 								scr_appear(abstract);
 							}						
@@ -19,7 +19,7 @@ switch (state) {
 						}
 					}
 					else if (abstract.visible == false) 
-						if scr_check_grid(abstract) and not scr_check_piece(abstract, piece.column, piece.row, piece.image_index, true) {
+						if scr_check_grid(abstract) and not scr_check_piece(abstract, piece.column, piece.row, piece.img_idx, true) {
 							scr_appear(abstract);
 						}
 						else if (scr_player_scroll(false)) {

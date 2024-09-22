@@ -7,7 +7,8 @@ if (check) {
 	current += step;
 	if (current - last >= gap) {
 		last += gap;
-		image_index += 1;
+		img_idx += 1;
+		image_index = img_idx;
 		change = true;
 	}
 	alarm[2] = 1;
@@ -29,7 +30,8 @@ else {
 
 if (not check) {
 	current = 1;
-	image_index = 0;
+	img_idx = 0;
+	image_index = img_idx;
 	depth = -y;
 	scr_change_state();
 }

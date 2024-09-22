@@ -7,12 +7,12 @@ if (state == global.ATTACK) {
 		var column = move.index div 4;
 		var row = move.index mod 4;
 	}
-	until (column != abstract.column or row != abstract.row or move.image_index != abstract.image_index);
+	until (column != abstract.column or row != abstract.row or move.img_idx != abstract.img_idx);
 	abstract.column = move.index div 4;
 	abstract.row = move.index mod 4;
 	abstract.x = x + abstract.column * global.CELL_SIZE;
 	abstract.y = y + abstract.row * global.CELL_SIZE;
-	scr_set_piece_rotation(abstract, move.image_index);
+	scr_set_piece_rotation(abstract, move.img_idx);
 	abstract.depth = -abstract.y;
 	scr_change_state();
 

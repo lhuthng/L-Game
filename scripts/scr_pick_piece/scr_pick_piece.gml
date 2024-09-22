@@ -11,7 +11,8 @@ function scr_pick_piece(piece){
 		column: piece.column,
 		row: piece.row,
 		sprite_index: piece.alternative,
-		image_index: piece.image_index,
+		img_idx: piece.img_idx,
+		image_index: piece.img_idx,
 		array: piece.array
 	}
 }

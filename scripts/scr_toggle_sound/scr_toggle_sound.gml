@@ -3,7 +3,8 @@
 function scr_toggle_sound(button){
 	with (global.SETTINGS_MANAGER) {
 		sound_on = 1 - sound_on;
-		button.image_index = sound_on;
+		button.img_idx = sound_on;
+		button.image_index = button.img_idx;
 		audio_group_set_gain(grp_sfx, sound_on, 0);
 	}
 }
