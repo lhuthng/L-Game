@@ -44,13 +44,18 @@ if (sid == global.ws) {
 						show_debug_message("paired"); 
 						status_index = 2;
 						connected = true;
-						global.HOSTING_BOX.status_index = 3;
+						host.status_index = 3;
 						scr_set_turn(data.value == "green");
 						global.IS_CLIENT = true;
 						global.START_BUTTON.visible = false;
 						break;
 					case "unpaired":
 						show_debug_message("unpaired");
+						status_index = 0;
+						connected = false;
+						host.status_index = 0;
+						token = "";
+						scr_surrender();
 						global.IS_CLIENT = false;
 						// global.START_BUTTON.visible = false;
 						break;

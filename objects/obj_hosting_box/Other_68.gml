@@ -31,6 +31,11 @@ if (sid == global.ws) {
 						break;
 					case "unpaired":
 						show_debug_message("unpaired");
+						status_index = 0;
+						connected = false;
+						client.status_index = 0;
+						token = "";
+						scr_surrender();
 						global.START_BUTTON.visible = false;
 						break;
 					case "set_turn":
