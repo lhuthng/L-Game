@@ -7,12 +7,6 @@ var sid = async_load[? "id"]; // Get the socket ID
 if (sid == global.ws) {
     var stype = async_load[? "type"]; // Get the event type
 
-	show_debug_message(string(stype));
-	show_debug_message(string(network_type_connect));
-	show_debug_message(string(network_type_disconnect));
-	show_debug_message(string(network_type_data));
-	show_debug_message(string(network_type_non_blocking_connect));
-
     switch (stype) {
         case network_type_connect:
             break;
@@ -21,6 +15,7 @@ if (sid == global.ws) {
             token = "";
 			status_index = 0;
 			global.IS_CLIENT = false;
+			global.START_BUTTON.visible = false;
             break;
 
         case network_type_data:
@@ -30,7 +25,6 @@ if (sid == global.ws) {
 				command: "",
 				value: ""
 			};
-			show_debug_message(string(msg));
 			if (scr_extract_message(msg, data)) {
 				switch (data.command) {
 					case "token":
@@ -38,7 +32,6 @@ if (sid == global.ws) {
 						status_index = 2;
 						break;
 					case "paired":
-						show_debug_message("paired"); 
 						status_index = 2;
 						connected = true;
 						host.status_index = 3;
@@ -47,17 +40,16 @@ if (sid == global.ws) {
 						scr_set_turn(data.value == "green");
 						break;
 					case "unpaired":
-						show_debug_message("unpaired");
 						status_index = 0;
 						connected = false;
 						host.status_index = 0;
 						token = "";
 						global.IS_CLIENT = false;
+						show_debug_message_ext("(unpaired) is client: {0}", [global.IS_CLIENT]);
 						global.START_BUTTON.visible = false;
 						scr_surrender(true);
 						break;
 					case "set_turn":
-						show_debug_message("set_turn" + data.value);
 						scr_set_turn(data.value == "green");
 						break;
 					case "start":
@@ -80,15 +72,12 @@ if (sid == global.ws) {
 				global.HOSTING_BOX.enabled = false;
 			}
 			else {
-				show_debug_message("Failed");
 				connected = false;
 				status_index = 0;
 			}
-            show_debug_message("WebSocket non-blocking connection attempt.");
             break;
 
         default:
-            show_debug_message("Unknown WebSocket event: " + string(event_type));
             break;
     }
 }

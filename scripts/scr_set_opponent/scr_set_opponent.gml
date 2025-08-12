@@ -1,8 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_set_opponent(index, target_opponent) {
+function scr_set_opponent(index, target_opponent) {	
 	global.UI_MANAGER.index = index;
 	global.MANAGER.preset.opponent = target_opponent;
+	
 	if (target_opponent == PLAYER_TYPE.NETWORK) {
 		global.MANAGER.allowed_to_start = false;
 		global.START_BUTTON.visible = false;
@@ -12,8 +13,10 @@ function scr_set_opponent(index, target_opponent) {
 	else {
 		global.MANAGER.allowed_to_start = true;
 		global.START_BUTTON.visible = true;
+		global.IS_CLIENT = false;
 		
 		if (global.HOSTING_BOX != pointer_null) {
+			scr_rematch();
 			scr_delete_network_box();
 		}
 	}

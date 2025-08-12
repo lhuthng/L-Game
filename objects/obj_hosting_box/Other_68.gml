@@ -6,7 +6,6 @@ var sid = async_load[? "id"]; // Get the socket ID
 if (sid == global.ws) {
     var stype = async_load[? "type"]; // Get the event type
 
-	show_debug_message(string(stype));
 
     switch (stype) {
         case network_type_connect:
@@ -26,22 +25,19 @@ if (sid == global.ws) {
 						status_index = 2;
 						break;
 					case "paired":
-						show_debug_message("paired");
 						global.MANAGER.allowed_to_start = true;
 						global.START_BUTTON.visible = true;
 						break;
 					case "unpaired":
-						show_debug_message("unpaired");
 						status_index = 0;
 						connected = false;
 						client.status_index = 0;
 						token = "";
 						global.MANAGER.allowed_to_start = false;
 						global.START_BUTTON.visible = false;
-						scr_surrender(true);
+						scr_surrender();
 						break;
 					case "set_turn":
-						show_debug_message("set_turn");
 						break;
 					default:
 						scr_handle_network_player(global.CLIENT_PLAYER, data.command, data.value);
@@ -66,14 +62,11 @@ if (sid == global.ws) {
 				client.status_index = 3;
 			}
 			else {
-				show_debug_message("Failed");
 				status_index = 0;
 			}
-            show_debug_message("WebSocket non-blocking connection attempt.");
             break;
 
         default:
-            show_debug_message("Unknown WebSocket event: " + string(event_type));
             break;
     }
 }

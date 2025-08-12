@@ -20,7 +20,5 @@ if (state == global.ATTACK) {
 				ds_list_clear(spawn_list);
 				break;
 			}
-	}
-	
-	
+	}	
 }
