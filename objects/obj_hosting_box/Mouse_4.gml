@@ -3,6 +3,8 @@
 
 if (not enabled) exit;
 
+global.START_BUTTON.visible = false;
+
 if (status_index == 0 
 	and scr_is_between(mouse_x, x + button_offset.x, x + button_offset.x + sprite_get_width(button_sprite))
 	and scr_is_between(mouse_y, y + button_offset.y, y + button_offset.y + sprite_get_height(button_sprite))

@@ -25,6 +25,8 @@ players_created = false;
 rematched = false;
 started = false;
 
+allowed_to_start = false
+
 is_waiting = false;
 
 chainned = false;

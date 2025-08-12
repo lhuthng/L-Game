@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_surrender(button = pointer_null){
+function scr_surrender(skip = false){
 	with (global.UI_MANAGER) {
 		if (current_index != -1) {
 			opponents[current_index].is_loop = false;
@@ -13,7 +13,7 @@ function scr_surrender(button = pointer_null){
 				scr_set_win(red_player, green_player);
 			}
 			else scr_set_win(other_player, current_player);
-			scr_rematch();
+			scr_rematch(skip);
 		}
 	}
-}
+}	

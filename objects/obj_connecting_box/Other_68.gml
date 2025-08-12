@@ -24,7 +24,6 @@ if (sid == global.ws) {
             break;
 
         case network_type_data:
-			show_debug_message("Got a messages?");
             var r_buffer = async_load[? "buffer"];
             var msg = buffer_read(r_buffer, buffer_string);
 			var data = {
@@ -33,8 +32,6 @@ if (sid == global.ws) {
 			};
 			show_debug_message(string(msg));
 			if (scr_extract_message(msg, data)) {
-				show_debug_message("1. " + data.command);
-				show_debug_message("1. " + data.value);
 				switch (data.command) {
 					case "token":
 						token = data.value;
@@ -45,9 +42,9 @@ if (sid == global.ws) {
 						status_index = 2;
 						connected = true;
 						host.status_index = 3;
-						scr_set_turn(data.value == "green");
 						global.IS_CLIENT = true;
 						global.START_BUTTON.visible = false;
+						scr_set_turn(data.value == "green");
 						break;
 					case "unpaired":
 						show_debug_message("unpaired");
@@ -55,9 +52,9 @@ if (sid == global.ws) {
 						connected = false;
 						host.status_index = 0;
 						token = "";
-						scr_surrender();
 						global.IS_CLIENT = false;
-						// global.START_BUTTON.visible = false;
+						global.START_BUTTON.visible = false;
+						scr_surrender(true);
 						break;
 					case "set_turn":
 						show_debug_message("set_turn" + data.value);
@@ -81,7 +78,6 @@ if (sid == global.ws) {
 			if (async_load[? "succeeded"] == 1) {
 				scr_request_token(sid, token);	
 				global.HOSTING_BOX.enabled = false;
-				show_debug_message("disabled");
 			}
 			else {
 				show_debug_message("Failed");

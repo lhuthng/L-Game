@@ -5,6 +5,8 @@
 
 if (not enabled) exit;
 
+
+
 token_typing = (
 	enabled
 	and scr_is_between(mouse_x, x + text_box.x, x + text_box.x + text_box.width)
@@ -15,14 +17,15 @@ if (status_index == 0
 	and scr_is_between(mouse_x, x + button_offset.x, x + button_offset.x + sprite_get_width(button_sprite))
 	and scr_is_between(mouse_y, y + button_offset.y, y + button_offset.y + sprite_get_height(button_sprite))
 ){
-	host.enabled = false
-	status_index = 1;
-	scr_surrender();
 	if (not connected) {
 		global.ws = network_create_socket(network_socket_ws);
 	    var result = network_connect_raw_async(global.ws, "wss://huuthang.site", 443);
 	}
 	else {
+		host.enabled = false
+		status_index = 1;
+		global.START_BUTTON.visible = false;
+		scr_surrender();
 		scr_request_token(global.ws, token);
 	}
 }

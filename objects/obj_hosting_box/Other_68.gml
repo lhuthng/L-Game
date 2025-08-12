@@ -35,8 +35,8 @@ if (sid == global.ws) {
 						connected = false;
 						client.status_index = 0;
 						token = "";
-						scr_surrender();
 						global.START_BUTTON.visible = false;
+						scr_surrender(true);
 						break;
 					case "set_turn":
 						show_debug_message("set_turn");

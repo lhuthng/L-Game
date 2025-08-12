@@ -13,13 +13,11 @@ function scr_rematch(skip = false){
 				red_player.state = global.IDLE;
 				red_player.abstract = pointer_null;
 			}
-			if (
-				not (
-					scr_check_piece(green_piece, 0, 1, 1) 
-					and scr_check_piece(red_piece, 3, 2, 3) 
-					and scr_check_coin(coin_1, 0, 0) 
-					and scr_check_coin(coin_2, 3, 3)
-				)
+			if (not(
+				scr_check_piece(green_piece, 0, 1, 1) 
+				and scr_check_piece(red_piece, 3, 2, 3) 
+				and scr_check_coin(coin_1, 0, 0) 
+				and scr_check_coin(coin_2, 3, 3))
 			) 
 			{
 				instance_destroy(coin_1);

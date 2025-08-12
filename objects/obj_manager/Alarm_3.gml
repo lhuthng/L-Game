@@ -4,7 +4,7 @@
 scr_place_coin(coin_2, 3, 3);
 
 if (chainned) alarm[4] = delay;
-else {
+else if (allowed_to_start) {
 	scr_enable_start_button();
 	is_waiting = false;
 }

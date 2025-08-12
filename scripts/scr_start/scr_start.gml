@@ -5,7 +5,7 @@ function scr_start(){
 		if (is_waiting and not (is_waiting and chainned)) break;
 		if (not rematched) {
 			chainned = true;
-			scr_rematch();		
+			scr_rematch();
 		}
  		else {
 			var green_type = (global.IS_CLIENT) ? PLAYER_TYPE.NETWORK : PLAYER_TYPE.PLAYER;
