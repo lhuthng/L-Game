@@ -20,7 +20,7 @@ if (status_index == 0
 	scr_surrender();
 	if (not connected) {
 		global.ws = network_create_socket(network_socket_ws);
-	    network_connect_raw_async(global.ws, "wss://thangvps.duckdns.org", 443);
+	    var result = network_connect_raw_async(global.ws, "wss://huuthang.site", 443);
 	}
 	else {
 		scr_request_token(global.ws, token);

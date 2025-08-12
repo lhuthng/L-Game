@@ -11,6 +11,6 @@ if (status_index == 0
 	client.enabled = false;
 	status_index = 1;
 	global.ws = network_create_socket(network_socket_ws);
-    network_connect_raw_async(global.ws, "wss://thangvps.duckdns.org", 443);
+    var result = network_connect_raw_async(global.ws, "wss://huuthang.site", 443);
 	enabled = true;
 }

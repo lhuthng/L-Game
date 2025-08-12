@@ -8,7 +8,7 @@ if (state == global.ATTACK) {
 		var move = manager.available_moves[index];
 		var column = move.index div 4;
 		var row = move.index mod 4;
-		if (column != abstract.column or row != abstract.row or move.img_idx != abstract.imagimg_idxe_index) {
+		if (column != abstract.column or row != abstract.row or move.img_idx != abstract.img_idx) {
 			var grid_2 = scr_fill_grid_2(grid, column, row, global.PRESET[move.img_idx], global.BLOCK);
 			var coins = [manager.coin_1, manager.coin_2];
 			for (var index_3 = 0; index_3 < 2; index_3++) {
