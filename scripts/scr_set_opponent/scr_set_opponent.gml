@@ -5,14 +5,15 @@ function scr_set_opponent(index, target_opponent) {
 	global.MANAGER.preset.opponent = target_opponent;
 	if (target_opponent == PLAYER_TYPE.NETWORK) {
 		global.MANAGER.allowed_to_start = false;
+		global.START_BUTTON.visible = false;
 		
 		scr_create_network_box();
 	}
 	else {
 		global.MANAGER.allowed_to_start = true;
+		global.START_BUTTON.visible = true;
 		
 		if (global.HOSTING_BOX != pointer_null) {
-			global.START_BUTTON.visible = true;
 			scr_delete_network_box();
 		}
 	}

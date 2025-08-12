@@ -27,6 +27,7 @@ if (sid == global.ws) {
 						break;
 					case "paired":
 						show_debug_message("paired");
+						global.MANAGER.allowed_to_start = true;
 						global.START_BUTTON.visible = true;
 						break;
 					case "unpaired":
@@ -35,6 +36,7 @@ if (sid == global.ws) {
 						connected = false;
 						client.status_index = 0;
 						token = "";
+						global.MANAGER.allowed_to_start = false;
 						global.START_BUTTON.visible = false;
 						scr_surrender(true);
 						break;
