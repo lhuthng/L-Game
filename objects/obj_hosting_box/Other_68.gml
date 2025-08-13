@@ -27,6 +27,7 @@ if (sid == global.ws) {
 					case "paired":
 						global.MANAGER.allowed_to_start = true;
 						global.START_BUTTON.visible = true;
+						scr_reload_start_button();
 						break;
 					case "unpaired":
 						status_index = 0;

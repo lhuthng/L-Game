@@ -4,9 +4,6 @@ function scr_set_opponent(index, target_opponent) {
 	global.UI_MANAGER.index = index;
 	global.MANAGER.preset.opponent = target_opponent;
 	
-	show_debug_message(global.MANAGER);
-	show_debug_message(global.START_BUTTON);
-	
 	if (target_opponent == PLAYER_TYPE.NETWORK) {
 		global.MANAGER.allowed_to_start = false;
 		global.START_BUTTON.visible = false;

@@ -12,7 +12,6 @@ function scr_start(){
  		else {
 			var green_type = (global.IS_CLIENT) ? PLAYER_TYPE.NETWORK : PLAYER_TYPE.PLAYER;
 			var red_type = (global.IS_CLIENT) ? PLAYER_TYPE.PLAYER : global.MANAGER.preset.opponent;
-			show_debug_message_ext("is client: {0}", [global.IS_CLIENT]);
 			scr_create_match(green_type, red_type);
 			
 			green_player.state = global.IDLE;
