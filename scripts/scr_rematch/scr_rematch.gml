@@ -2,7 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_rematch(skip = false){
 	with (global.MANAGER) {
-		if (is_waiting) break;
+		if (is_waiting) {
+			show_debug_message("im waiting for what?");
+			break;
+		}
 		
 		var renew = false;
 		

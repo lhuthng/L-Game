@@ -140,6 +140,7 @@
     {"id":{"name":"scr_play_sound","path":"scripts/scr_play_sound/scr_play_sound.yy",},},
     {"id":{"name":"scr_player_scroll","path":"scripts/scr_player_scroll/scr_player_scroll.yy",},},
     {"id":{"name":"scr_positive_modulo","path":"scripts/scr_positive_modulo/scr_positive_modulo.yy",},},
+    {"id":{"name":"scr_reload_start_button","path":"scripts/scr_reload_start_button/scr_reload_start_button.yy",},},
     {"id":{"name":"scr_rematch","path":"scripts/scr_rematch/scr_rematch.yy",},},
     {"id":{"name":"scr_request_token","path":"scripts/scr_request_token/scr_request_token.yy",},},
     {"id":{"name":"scr_rotate_piece","path":"scripts/scr_rotate_piece/scr_rotate_piece.yy",},},

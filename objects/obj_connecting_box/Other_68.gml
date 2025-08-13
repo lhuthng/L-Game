@@ -15,7 +15,6 @@ if (sid == global.ws) {
             token = "";
 			status_index = 0;
 			global.IS_CLIENT = false;
-			global.START_BUTTON.visible = false;
             break;
 
         case network_type_data:
@@ -45,8 +44,6 @@ if (sid == global.ws) {
 						host.status_index = 0;
 						token = "";
 						global.IS_CLIENT = false;
-						show_debug_message_ext("(unpaired) is client: {0}", [global.IS_CLIENT]);
-						global.START_BUTTON.visible = false;
 						scr_surrender(true);
 						break;
 					case "set_turn":

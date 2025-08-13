@@ -74,6 +74,7 @@
     {"name":"scr_play_music","order":1,"path":"scripts/scr_play_music/scr_play_music.yy",},
     {"name":"scr_player_scroll","order":12,"path":"scripts/scr_player_scroll/scr_player_scroll.yy",},
     {"name":"scr_positive_modulo","order":5,"path":"scripts/scr_positive_modulo/scr_positive_modulo.yy",},
+    {"name":"scr_reload_start_button","order":28,"path":"scripts/scr_reload_start_button/scr_reload_start_button.yy",},
     {"name":"scr_rematch","order":3,"path":"scripts/scr_rematch/scr_rematch.yy",},
     {"name":"scr_request_token","order":22,"path":"scripts/scr_request_token/scr_request_token.yy",},
     {"name":"scr_rotate_piece","order":2,"path":"scripts/scr_rotate_piece/scr_rotate_piece.yy",},

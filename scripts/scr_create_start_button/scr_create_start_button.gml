@@ -11,6 +11,7 @@ function scr_create_start_button(x, y){
 
 		opacity = 0;
 
+		initialized = true;
 		pressed = true;
 
 		shake = false;

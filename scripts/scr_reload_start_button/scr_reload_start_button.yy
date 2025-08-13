@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_reload_start_button",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_reload_start_button",
+  "parent":{
+    "name":"function",
+    "path":"folders/Scripts/function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
