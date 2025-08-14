@@ -12,10 +12,10 @@ function scr_set_opponent(index, target_opponent) {
 	}
 	else {
 		global.MANAGER.allowed_to_start = true;
-		global.START_BUTTON.visible = true;
-		scr_reload_start_button();
 		
 		if (global.HOSTING_BOX != pointer_null) {
+			global.START_BUTTON.visible = true;
+			scr_reload_start_button();
 			global.IS_CLIENT = false;
 			
 			scr_rematch();			
