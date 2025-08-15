@@ -6,8 +6,14 @@ draw_self();
 
 var h = 43;
 
-draw_sprite(spr_player_icon, 0, 1 + green_delta, h);
-draw_sprite(spr_player_name, 0, 1, h);
+if (global.IS_CLIENT) {
+	draw_sprite(spr_player_icon, 1, 1 + green_delta, h);
+	draw_sprite(spr_player_name, 1, 1, h);
+}
+else {
+	draw_sprite(spr_player_icon, 0, 1 + green_delta, h);
+	draw_sprite(spr_player_name, 0, 1, h);
+}
 
 var opponent_delta = red_delta;
 
@@ -28,6 +34,10 @@ with (global.MANAGER) {
 		}
 		draw_sprite(spr_icon, red_player.index, 98 - opponent_delta, h);
 		draw_sprite(spr_names, red_player.index, 98, h);
+	}
+	else if (global.IS_CLIENT) {
+		draw_sprite(spr_icon, global.PLAYER_INDEX, 98 - opponent_delta, h);
+		draw_sprite(spr_names, global.PLAYER_INDEX, 98, h);
 	}
 	else {
 		draw_sprite(spr_icon, global.UI_MANAGER.index, 98 - opponent_delta, h);

@@ -8,6 +8,10 @@ function scr_set_opponent(index, target_opponent) {
 		global.MANAGER.allowed_to_start = false;
 		global.START_BUTTON.visible = false;
 		
+		if (global.MANAGER.started) {
+			scr_surrender();
+		}
+		
 		scr_create_network_box();
 	}
 	else {

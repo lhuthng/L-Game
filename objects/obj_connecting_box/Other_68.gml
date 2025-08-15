@@ -49,6 +49,9 @@ if (sid == global.ws) {
 					case "set_turn":
 						scr_set_turn(data.value == "green");
 						break;
+					case "surrender":
+						scr_surrender(true);
+						break;
 					case "start":
 						scr_start();
 						break;

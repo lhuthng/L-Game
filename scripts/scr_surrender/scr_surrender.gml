@@ -13,6 +13,7 @@ function scr_surrender(skip = false){
 				scr_set_win(red_player, green_player);
 			}
 			else scr_set_win(other_player, current_player);
+			
 			scr_rematch(skip);
 		}
 	}

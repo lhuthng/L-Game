@@ -3,8 +3,16 @@
 
 var check = current < 1;
 var change = false;
+var length = sqrt(sqr(target.x - origin.x) + sqr(target.y - origin.y)) * 0.5;
+
 if (check) {
-	current += step;
+	if (length > 0) {
+		current += step;
+		// current += speed_step / length;
+	}
+	else {
+		current = 1;
+	}
 	if (current - last >= gap) {
 		last += gap;
 		img_idx += 1;
@@ -15,9 +23,7 @@ if (check) {
 	depth = -99999;
 } 
 
-var length = sqrt(sqr(target.x - origin.x) + sqr(target.y - origin.y)) * 0.5;
-if (length == 0) current = 1;
-else {
+if (length > 0) {
 	if (change) {
 		part_system_depth(manager.particle_system, -y + 1);
 		part_type_sprite(manager.trail_particle, spr_mini_coin, 0, 0, 0);

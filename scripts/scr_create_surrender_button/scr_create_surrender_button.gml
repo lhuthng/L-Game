@@ -7,7 +7,7 @@ function scr_create_surrender_button(x, y){
 	button.image_index = 0;
 	button.sprite_index = spr_surrender;
 	with (button) {
-		trigger = scr_surrender;
+		trigger = scr_surrender_trigger;
 		f_draw = scr_draw_setting_button;
 		f_left_pressed = scr_left_pressed_trigger;
 	}

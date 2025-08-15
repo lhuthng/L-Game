@@ -38,9 +38,11 @@ if (sid == global.ws) {
 						global.START_BUTTON.visible = false;
 						global.START_BUTTON.initialized = false;
 						scr_surrender(true);
-						show_debug_message_ext("After unpaired: {0}", [global.MANAGER]);
 						break;
 					case "set_turn":
+						break;
+					case "surrender":
+						scr_surrender(true);
 						break;
 					default:
 						scr_handle_network_player(global.CLIENT_PLAYER, data.command, data.value);

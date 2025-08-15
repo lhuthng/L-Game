@@ -3,6 +3,6 @@
 function scr_calculate_position(percent, height, origin, target){
 	return {
 		x: origin.x + (target.x - origin.x) * percent,
-		y: origin.y + (target.y - origin.y) * percent - height + height * sqr(2 * percent - 1)
+		y: origin.y + (target.y - origin.y) * percent + 4 * height * percent * (percent - 1)
 	};
 }

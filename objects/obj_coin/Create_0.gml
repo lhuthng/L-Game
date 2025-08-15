@@ -10,4 +10,5 @@ origin = pointer_null;
 current = 0;
 last = 0;
 step = 0.03;
+// speed_step = 0.45;
 gap = 1;

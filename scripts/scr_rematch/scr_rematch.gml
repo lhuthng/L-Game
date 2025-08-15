@@ -3,7 +3,6 @@
 function scr_rematch(skip = false){
 	with (global.MANAGER) {
 		if (is_waiting) {
-			show_debug_message("im waiting for what?");
 			break;
 		}
 		
