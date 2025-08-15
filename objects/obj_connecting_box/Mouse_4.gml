@@ -19,7 +19,7 @@ if (status_index == 0
 ){
 	if (not connected) {
 		global.ws = network_create_socket(network_socket_ws);
-	    var result = network_connect_raw_async(global.ws, "wss://huuthang.site", 443);
+	    var result = network_connect_raw_async(global.ws, global.SOCKET_SERVER, global.SOCKET_PORT);
 	}
 	else {
 		host.enabled = false

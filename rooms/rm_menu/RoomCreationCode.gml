@@ -101,5 +101,7 @@ global.HOSTING_BOX = pointer_null;
 global.ws = pointer_null;
 global.CLIENT_PLAYER = pointer_null;
 global.HOST_PLAYER = pointer_null;
+global.SOCKET_SERVER = "wss://huuthang.site";
+global.SOCKET_PORT = 3000
 
 global.IS_CLIENT = false;
