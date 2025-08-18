@@ -15,6 +15,7 @@ if (sid == global.ws) {
             token = "";
 			status_index = 0;
 			global.IS_CLIENT = false;
+			host.enabled = true;
             break;
 
         case network_type_data:
@@ -42,6 +43,7 @@ if (sid == global.ws) {
 						status_index = 0;
 						connected = false;
 						host.status_index = 0;
+						host.enabled = true;
 						token = "";
 						global.IS_CLIENT = false;
 						scr_surrender(true);

@@ -3,7 +3,7 @@
 function scr_create_music_setting_button(x, y){
 	var button = instance_create_layer(x, y, layer, obj_image_button);
 	with (button) {
-		sprite_index = spr_music_icon;
+		sprite_index = spr_sound_icon;
 		image_speed = 0;
 		img_idx = global.SETTINGS_MANAGER.music_on;
 		image_index = img_idx;
